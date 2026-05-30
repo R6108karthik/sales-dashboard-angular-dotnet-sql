@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "SalesDashboard.Application/1.0.0": {
+        "dependencies": {
+          "SalesDashboard.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SalesDashboard.Application.dll": {}
+        }
+      },
+      "SalesDashboard.Domain/1.0.0": {
+        "runtime": {
+          "SalesDashboard.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SalesDashboard.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SalesDashboard.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

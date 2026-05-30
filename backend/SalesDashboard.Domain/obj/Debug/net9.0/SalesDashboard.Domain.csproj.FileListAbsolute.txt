@@ -1,0 +1,11 @@
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\bin\Debug\net9.0\SalesDashboard.Domain.deps.json
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\bin\Debug\net9.0\SalesDashboard.Domain.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\bin\Debug\net9.0\SalesDashboard.Domain.pdb
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\SalesDashboard.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\SalesDashboard.Domain.AssemblyInfoInputs.cache
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\SalesDashboard.Domain.AssemblyInfo.cs
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\SalesDashboard.Domain.csproj.CoreCompileInputs.cache
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\SalesDashboard.Domain.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\refint\SalesDashboard.Domain.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\SalesDashboard.Domain.pdb
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\ref\SalesDashboard.Domain.dll

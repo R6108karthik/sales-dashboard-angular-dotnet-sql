@@ -1,0 +1,15 @@
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\bin\Debug\net9.0\SalesDashboard.Application.deps.json
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\bin\Debug\net9.0\SalesDashboard.Application.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\bin\Debug\net9.0\SalesDashboard.Application.pdb
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\bin\Debug\net9.0\SalesDashboard.Domain.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\bin\Debug\net9.0\SalesDashboard.Domain.pdb
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\obj\Debug\net9.0\SalesDashboard.Application.csproj.AssemblyReference.cache
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\obj\Debug\net9.0\SalesDashboard.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\obj\Debug\net9.0\SalesDashboard.Application.AssemblyInfoInputs.cache
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\obj\Debug\net9.0\SalesDashboard.Application.AssemblyInfo.cs
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\obj\Debug\net9.0\SalesDashboard.Application.csproj.CoreCompileInputs.cache
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\obj\Debug\net9.0\SalesDas.B95CB915.Up2Date
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\obj\Debug\net9.0\SalesDashboard.Application.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\obj\Debug\net9.0\refint\SalesDashboard.Application.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\obj\Debug\net9.0\SalesDashboard.Application.pdb
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Application\obj\Debug\net9.0\ref\SalesDashboard.Application.dll
