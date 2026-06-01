@@ -17,3 +17,4 @@ C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Inf
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Infrastructure\obj\Debug\net9.0\SalesDashboard.Infrastructure.pdb
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Infrastructure\obj\Debug\net9.0\SalesDashboard.Infrastructure.genruntimeconfig.cache
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Infrastructure\obj\Debug\net9.0\ref\SalesDashboard.Infrastructure.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Infrastructure\obj\Debug\net9.0\SalesDashboard.Infrastructure.sourcelink.json

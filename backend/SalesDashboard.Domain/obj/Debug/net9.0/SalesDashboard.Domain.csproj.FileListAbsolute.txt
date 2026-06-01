@@ -9,3 +9,4 @@ C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Dom
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\refint\SalesDashboard.Domain.dll
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\SalesDashboard.Domain.pdb
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\ref\SalesDashboard.Domain.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Domain\obj\Debug\net9.0\SalesDashboard.Domain.sourcelink.json
