@@ -165,3 +165,6 @@ C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\obj\Debug\net9.0\SalesDashboard.Api.sourcelink.json
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
