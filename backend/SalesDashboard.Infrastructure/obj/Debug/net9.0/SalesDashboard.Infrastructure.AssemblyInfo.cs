@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SalesDashboard.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8da02d06f8361056b0aae319cc41f6e3a66f8820")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+667dda0c84168a539492e34993457f507953f9cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("SalesDashboard.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SalesDashboard.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
