@@ -1,1 +1,86 @@
-<p>products works!</p>
+<section class="page-header">
+  <div>
+    <h1>Products</h1>
+    <p>Manage your sales products and inventory.</p>
+  </div>
+</section>
+
+<section class="form-section">
+  <h2>Add Product</h2>
+
+  <form #productForm="ngForm" (ngSubmit)="saveProduct()">
+    <input
+      name="productName"
+      [(ngModel)]="form.productName"
+      placeholder="Product name"
+      required
+    />
+
+    <input
+      name="category"
+      [(ngModel)]="form.category"
+      placeholder="Category"
+      required
+    />
+
+    <input
+      name="price"
+      [(ngModel)]="form.price"
+      type="number"
+      min="1"
+      placeholder="Price"
+      required
+    />
+
+    <input
+      name="stockQuantity"
+      [(ngModel)]="form.stockQuantity"
+      type="number"
+      min="0"
+      placeholder="Stock"
+      required
+    />
+
+    <button type="submit" [disabled]="productForm.invalid">
+      Add product
+    </button>
+  </form>
+</section>
+
+<p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+<p *ngIf="loading">Loading products...</p>
+
+<div class="table-container" *ngIf="!loading">
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.productName }}</td>
+        <td>{{ product.category }}</td>
+        <td>{{ product.price | currency:'INR' }}</td>
+        <td>{{ product.stockQuantity }}</td>
+        <td>
+          <button
+            class="delete-button"
+            type="button"
+            (click)="deleteProduct(product.id)">
+            Delete
+          </button>
+        </td>
+      </tr>
+
+      <tr *ngIf="products.length === 0">
+        <td colspan="5">No products found.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

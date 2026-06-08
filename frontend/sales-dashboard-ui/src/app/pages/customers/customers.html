@@ -1,1 +1,83 @@
-<p>customers works!</p>
+<section class="page-header">
+  <div>
+    <h1>Customers</h1>
+    <p>Manage your sales customers.</p>
+  </div>
+</section>
+
+<section class="form-section">
+  <h2>Add Customer</h2>
+
+  <form #customerForm="ngForm" (ngSubmit)="saveCustomer()">
+    <input
+      name="customerName"
+      [(ngModel)]="form.customerName"
+      placeholder="Customer name"
+      required
+    />
+
+    <input
+      name="email"
+      [(ngModel)]="form.email"
+      type="email"
+      placeholder="Email"
+      required
+    />
+
+    <input
+      name="phoneNumber"
+      [(ngModel)]="form.phoneNumber"
+      placeholder="Phone number"
+      required
+    />
+
+    <input
+      name="city"
+      [(ngModel)]="form.city"
+      placeholder="City"
+      required
+    />
+
+    <button type="submit" [disabled]="customerForm.invalid">
+      Add customer
+    </button>
+  </form>
+</section>
+
+<p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+<p *ngIf="loading">Loading customers...</p>
+
+<div class="table-container" *ngIf="!loading">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>City</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>{{ customer.customerName }}</td>
+        <td>{{ customer.email }}</td>
+        <td>{{ customer.phoneNumber }}</td>
+        <td>{{ customer.city }}</td>
+        <td>
+          <button
+            class="delete-button"
+            type="button"
+            (click)="deleteCustomer(customer.id)">
+            Delete
+          </button>
+        </td>
+      </tr>
+
+      <tr *ngIf="customers.length === 0">
+        <td colspan="5">No customers found.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

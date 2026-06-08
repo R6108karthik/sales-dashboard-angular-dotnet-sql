@@ -1,0 +1,76 @@
+.app-layout {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  padding: 24px 16px;
+  color: white;
+  background: #172033;
+}
+
+.brand {
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+nav {
+  display: grid;
+  gap: 8px;
+}
+
+nav a {
+  padding: 11px 12px;
+  color: #cbd5e1;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav a.active {
+  color: white;
+  background: #2563eb;
+}
+
+main {
+  min-width: 0;
+  background: #f1f5f9;
+}
+
+header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.page-content {
+  padding: 28px;
+}
+
+@media (max-width: 700px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    padding: 16px;
+  }
+
+  .brand {
+    margin-bottom: 16px;
+  }
+
+  nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-content {
+    padding: 16px;
+  }
+}

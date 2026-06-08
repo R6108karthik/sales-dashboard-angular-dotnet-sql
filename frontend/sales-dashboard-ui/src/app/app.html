@@ -1,18 +1,35 @@
-<div class="app-shell">
-  <header class="app-header">
-    <div>
-      <h1>{{ title() }}</h1>
-      <p>Use the links below to open each page.</p>
-    </div>
-    <nav class="nav-links">
-      <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
-      <a routerLink="customers" routerLinkActive="active">Customers</a>
-      <a routerLink="products" routerLinkActive="active">Products</a>
-      <a routerLink="orders" routerLinkActive="active">Orders</a>
-    </nav>
-  </header>
+<div class="app-layout">
+  <aside class="sidebar">
+    <div class="brand">Sales Dashboard</div>
 
-  <main class="content-view">
-    <router-outlet></router-outlet>
+    <nav>
+      <a routerLink="/" routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }">
+        Dashboard
+      </a>
+
+      <a routerLink="/customers" routerLinkActive="active">
+        Customers
+      </a>
+
+      <a routerLink="/products" routerLinkActive="active">
+        Products
+      </a>
+
+      <a routerLink="/orders" routerLinkActive="active">
+        Orders
+      </a>
+    </nav>
+  </aside>
+
+  <main>
+    <header>
+      <strong>Sales Management</strong>
+      <span>Administrator</span>
+    </header>
+
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
   </main>
 </div>

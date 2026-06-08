@@ -1,1 +1,50 @@
-<p>dashboard works!</p>
+<section class="page-header">
+  <div>
+    <h1>Dashboard</h1>
+    <p>Live overview of customers, products, and inventory.</p>
+  </div>
+</section>
+
+<p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+<p *ngIf="loading">Loading dashboard...</p>
+
+<section class="stats-grid" *ngIf="!loading">
+  <article class="stat-card">
+    <span>Total Customers</span>
+    <strong>{{ totalCustomers }}</strong>
+  </article>
+
+  <article class="stat-card">
+    <span>Total Products</span>
+    <strong>{{ totalProducts }}</strong>
+  </article>
+
+  <article class="stat-card">
+    <span>Total Stock</span>
+    <strong>{{ totalStock }}</strong>
+  </article>
+
+  <article class="stat-card">
+    <span>Inventory Value</span>
+    <strong>{{ inventoryValue | currency:'INR' }}</strong>
+  </article>
+</section>
+
+<section class="summary-panel">
+  <h2>Today Summary</h2>
+
+  <div class="summary-row">
+    <span>Customer database</span>
+    <strong>{{ totalCustomers }} active records</strong>
+  </div>
+
+  <div class="summary-row">
+    <span>Product catalog</span>
+    <strong>{{ totalProducts }} listed items</strong>
+  </div>
+
+  <div class="summary-row">
+    <span>Stock available</span>
+    <strong>{{ totalStock }} units</strong>
+  </div>
+</section>

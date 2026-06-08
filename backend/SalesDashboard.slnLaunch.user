@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "SalesDashboard.Api\\SalesDashboard.Api.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
