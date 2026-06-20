@@ -3,6 +3,33 @@
   "WorkspaceRootPath": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAF8FBAD-CA99-4C85-AD5D-8F974438DD09}|SalesDashboard.Infrastructure\\SalesDashboard.Infrastructure.csproj|c:\\karthikprojects\\sales-dashboard-angular-dotnet-sql\\backend\\salesdashboard.infrastructure\\data\\salesdashboarddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAF8FBAD-CA99-4C85-AD5D-8F974438DD09}|SalesDashboard.Infrastructure\\SalesDashboard.Infrastructure.csproj|solutionrelative:salesdashboard.infrastructure\\data\\salesdashboarddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15CF97E2-FD8E-42DF-8C34-AFE9553F00F0}|SalesDashboard.Domain\\SalesDashboard.Domain.csproj|c:\\karthikprojects\\sales-dashboard-angular-dotnet-sql\\backend\\salesdashboard.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15CF97E2-FD8E-42DF-8C34-AFE9553F00F0}|SalesDashboard.Domain\\SalesDashboard.Domain.csproj|solutionrelative:salesdashboard.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15CF97E2-FD8E-42DF-8C34-AFE9553F00F0}|SalesDashboard.Domain\\SalesDashboard.Domain.csproj|c:\\karthikprojects\\sales-dashboard-angular-dotnet-sql\\backend\\salesdashboard.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15CF97E2-FD8E-42DF-8C34-AFE9553F00F0}|SalesDashboard.Domain\\SalesDashboard.Domain.csproj|solutionrelative:salesdashboard.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15CF97E2-FD8E-42DF-8C34-AFE9553F00F0}|SalesDashboard.Domain\\SalesDashboard.Domain.csproj|c:\\karthikprojects\\sales-dashboard-angular-dotnet-sql\\backend\\salesdashboard.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15CF97E2-FD8E-42DF-8C34-AFE9553F00F0}|SalesDashboard.Domain\\SalesDashboard.Domain.csproj|solutionrelative:salesdashboard.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15CF97E2-FD8E-42DF-8C34-AFE9553F00F0}|SalesDashboard.Domain\\SalesDashboard.Domain.csproj|c:\\karthikprojects\\sales-dashboard-angular-dotnet-sql\\backend\\salesdashboard.domain\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15CF97E2-FD8E-42DF-8C34-AFE9553F00F0}|SalesDashboard.Domain\\SalesDashboard.Domain.csproj|solutionrelative:salesdashboard.domain\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38172EF0-9409-4EB0-93A1-131AFE883A9D}|SalesDashboard.Api\\SalesDashboard.Api.csproj|c:\\karthikprojects\\sales-dashboard-angular-dotnet-sql\\backend\\salesdashboard.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{38172EF0-9409-4EB0-93A1-131AFE883A9D}|SalesDashboard.Api\\SalesDashboard.Api.csproj|solutionrelative:salesdashboard.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{38172EF0-9409-4EB0-93A1-131AFE883A9D}|SalesDashboard.Api\\SalesDashboard.Api.csproj|c:\\karthikprojects\\sales-dashboard-angular-dotnet-sql\\backend\\salesdashboard.api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38172EF0-9409-4EB0-93A1-131AFE883A9D}|SalesDashboard.Api\\SalesDashboard.Api.csproj|solutionrelative:salesdashboard.api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,8 +45,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAMwTAAAAAAAAAAAWwOQTAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-06-09T16:25:09.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SalesDashboardDbContext.cs",
+              "DocumentMoniker": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Infrastructure\\Data\\SalesDashboardDbContext.cs",
+              "RelativeDocumentMoniker": "SalesDashboard.Infrastructure\\Data\\SalesDashboardDbContext.cs",
+              "ToolTip": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Infrastructure\\Data\\SalesDashboardDbContext.cs",
+              "RelativeToolTip": "SalesDashboard.Infrastructure\\Data\\SalesDashboardDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T16:21:08.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "SalesDashboard.Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "SalesDashboard.Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T16:20:15.528Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -30,7 +96,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Domain\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "SalesDashboard.Domain\\Entities\\Customer.cs",
+              "ToolTip": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Domain\\Entities\\Customer.cs",
+              "RelativeToolTip": "SalesDashboard.Domain\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T16:19:21.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Domain\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "SalesDashboard.Domain\\Entities\\OrderItem.cs",
+              "ToolTip": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Domain\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "SalesDashboard.Domain\\Entities\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T16:18:03.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Domain\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "SalesDashboard.Domain\\Entities\\Order.cs",
+              "ToolTip": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Domain\\Entities\\Order.cs",
+              "RelativeToolTip": "SalesDashboard.Domain\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T16:16:17.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SalesDashboard.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SalesDashboard.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-09T16:11:47.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Api\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "SalesDashboard.Api\\Controllers\\CustomersController.cs",
@@ -43,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "SalesDashboard.Infrastructure.csproj",
               "DocumentMoniker": "C:\\KarthikProjects\\sales-dashboard-angular-dotnet-sql\\backend\\SalesDashboard.Infrastructure\\SalesDashboard.Infrastructure.csproj",
               "RelativeDocumentMoniker": "SalesDashboard.Infrastructure\\SalesDashboard.Infrastructure.csproj",

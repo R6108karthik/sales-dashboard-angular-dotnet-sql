@@ -13,4 +13,5 @@ public class Customer
     public string City { get; set; } = string.Empty;
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
 }

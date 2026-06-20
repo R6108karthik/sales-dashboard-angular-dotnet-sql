@@ -13,4 +13,5 @@ public class Product
     public int StockQuantity { get; set; }
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 }

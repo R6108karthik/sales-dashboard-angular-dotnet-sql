@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Launch (SalesDashboard.Api)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/SalesDashboard.Api/bin/Debug/net9.0/SalesDashboard.Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/SalesDashboard.Api",
+      "stopAtEntry": false,
+      "configuration": "Debug",
+      "console": "integratedTerminal",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "internalConsoleOptions": "neverOpen",
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "launchBrowser": {
+        "enabled": true,
+        "args": "https://localhost:7100/swagger"
+      },
+      "justMyCode": true
+    }
+  ]
+}
