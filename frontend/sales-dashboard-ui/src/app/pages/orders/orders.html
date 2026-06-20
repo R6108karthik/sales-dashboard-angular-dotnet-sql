@@ -1,1 +1,97 @@
-<p>orders works!</p>
+<section class="page-header">
+  <div>
+    <h1>Orders</h1>
+    <p>Create sales orders and view order history.</p>
+  </div>
+</section>
+
+<section class="form-section">
+  <h2>Create Order</h2>
+
+  <form (ngSubmit)="createOrder()">
+    <label>
+      Customer
+      <select name="customerId" [(ngModel)]="form.customerId" required>
+        <option [ngValue]="0">Select customer</option>
+        <option *ngFor="let customer of customers" [ngValue]="customer.id">
+          {{ customer.customerName }} - {{ customer.city }}
+        </option>
+      </select>
+    </label>
+
+    <div class="items-header">
+      <h3>Products</h3>
+      <button type="button" (click)="addItem()">Add product</button>
+    </div>
+
+    <div class="order-item" *ngFor="let item of form.items; let index = index">
+      <select [name]="'product-' + index" [(ngModel)]="item.productId">
+        <option [ngValue]="0">Select product</option>
+        <option
+          *ngFor="let product of products"
+          [ngValue]="product.id"
+          [disabled]="product.stockQuantity === 0">
+          {{ product.productName }} | Stock: {{ product.stockQuantity }} | {{ product.price | currency:'INR' }}
+        </option>
+      </select>
+
+      <input
+        [name]="'quantity-' + index"
+        [(ngModel)]="item.quantity"
+        type="number"
+        min="1"
+        placeholder="Quantity"
+      />
+
+      <button type="button" class="delete-button" (click)="removeItem(index)">
+        Remove
+      </button>
+    </div>
+
+    <button type="submit" class="submit-button">Create order</button>
+  </form>
+</section>
+
+<p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+<p class="success" *ngIf="successMessage">{{ successMessage }}</p>
+<p *ngIf="loading">Loading orders...</p>
+
+<section class="table-container" *ngIf="!loading">
+  <table>
+    <thead>
+      <tr>
+        <th>Order</th>
+        <th>Customer</th>
+        <th>Date</th>
+        <th>Products</th>
+        <th>Total</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>#{{ order.id }}</td>
+        <td>{{ order.customerName }}</td>
+        <td>{{ order.orderDate | date:'medium' }}</td>
+        <td>
+          <div *ngFor="let item of order.items">
+            {{ item.productName }} x {{ item.quantity }}
+          </div>
+        </td>
+        <td>{{ order.totalAmount | currency:'INR' }}</td>
+        <td>{{ order.status }}</td>
+        <td>
+          <button class="delete-button" type="button" (click)="deleteOrder(order.id)">
+            Delete
+          </button>
+        </td>
+      </tr>
+
+      <tr *ngIf="orders.length === 0">
+        <td colspan="7">No orders found.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
