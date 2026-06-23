@@ -1,50 +1,42 @@
 <section class="page-header">
   <div>
-    <h1>Dashboard</h1>
-    <p>Live overview of customers, products, and inventory.</p>
+    <h1>Sales Dashboard</h1>
+    <p>Current sales and inventory overview.</p>
   </div>
+
+  <button type="button" (click)="loadSummary()">Refresh</button>
 </section>
 
-<p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
 <p *ngIf="loading">Loading dashboard...</p>
+<p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
 
-<section class="stats-grid" *ngIf="!loading">
+<section class="stats-grid" *ngIf="summary && !loading">
   <article class="stat-card">
-    <span>Total Customers</span>
-    <strong>{{ totalCustomers }}</strong>
+    <span>Customers</span>
+    <strong>{{ summary.totalCustomers }}</strong>
   </article>
 
   <article class="stat-card">
-    <span>Total Products</span>
-    <strong>{{ totalProducts }}</strong>
+    <span>Products</span>
+    <strong>{{ summary.totalProducts }}</strong>
   </article>
 
   <article class="stat-card">
-    <span>Total Stock</span>
-    <strong>{{ totalStock }}</strong>
+    <span>Orders</span>
+    <strong>{{ summary.totalOrders }}</strong>
   </article>
 
-  <article class="stat-card">
-    <span>Inventory Value</span>
-    <strong>{{ inventoryValue | currency:'INR' }}</strong>
+  <article class="stat-card sales-card">
+    <span>Total Sales</span>
+    <strong>{{ summary.totalSales | currency:'INR' }}</strong>
   </article>
 </section>
 
-<section class="summary-panel">
-  <h2>Today Summary</h2>
+<section class="summary-panel" *ngIf="summary && !loading">
+  <h2>Inventory Alert</h2>
 
   <div class="summary-row">
-    <span>Customer database</span>
-    <strong>{{ totalCustomers }} active records</strong>
-  </div>
-
-  <div class="summary-row">
-    <span>Product catalog</span>
-    <strong>{{ totalProducts }} listed items</strong>
-  </div>
-
-  <div class="summary-row">
-    <span>Stock available</span>
-    <strong>{{ totalStock }} units</strong>
+    <span>Products with stock of 5 or below</span>
+    <strong>{{ summary.lowStockProducts }}</strong>
   </div>
 </section>

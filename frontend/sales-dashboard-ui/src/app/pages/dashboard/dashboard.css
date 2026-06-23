@@ -1,4 +1,8 @@
 .page-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
   margin-bottom: 24px;
 }
 
@@ -8,7 +12,17 @@
 }
 
 .page-header p {
+  margin-bottom: 0;
   color: #64748b;
+}
+
+button {
+  padding: 10px 16px;
+  color: white;
+  background: #2563eb;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .stats-grid {
@@ -18,10 +32,11 @@
   margin-bottom: 24px;
 }
 
-.stat-card {
+.stat-card,
+.summary-panel {
+  padding: 20px;
   background: white;
   border: 1px solid #e2e8f0;
-  padding: 20px;
   border-radius: 8px;
 }
 
@@ -35,11 +50,9 @@
   font-size: 28px;
 }
 
-.summary-panel {
-  background: white;
-  border: 1px solid #e2e8f0;
-  padding: 20px;
-  border-radius: 8px;
+.sales-card {
+  border-color: #86efac;
+  background: #f0fdf4;
 }
 
 .summary-panel h2 {
@@ -50,31 +63,26 @@
 .summary-row {
   display: flex;
   justify-content: space-between;
-  padding: 14px 0;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.summary-row:last-child {
-  border-bottom: 0;
+  padding-top: 12px;
 }
 
 .error {
   color: #dc2626;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-
+  .page-header,
   .summary-row {
     display: grid;
-    gap: 6px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
   }
 }
