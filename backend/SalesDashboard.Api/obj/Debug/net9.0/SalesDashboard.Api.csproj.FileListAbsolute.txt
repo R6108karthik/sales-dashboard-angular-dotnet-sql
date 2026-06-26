@@ -168,3 +168,7 @@ C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\Pipelines.Sockets.Unofficial.dll
+C:\KarthikProjects\sales-dashboard-angular-dotnet-sql\backend\SalesDashboard.Api\bin\Debug\net9.0\StackExchange.Redis.dll
