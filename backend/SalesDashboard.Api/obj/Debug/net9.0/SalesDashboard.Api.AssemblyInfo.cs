@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SalesDashboard.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb5d6cb22f31799ec989ccd8903b4f693830f4b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb0d84e2901603c3e72b0b86bc1073bcdf0b0617")]
 [assembly: System.Reflection.AssemblyProductAttribute("SalesDashboard.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SalesDashboard.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

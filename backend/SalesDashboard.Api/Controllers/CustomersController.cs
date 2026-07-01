@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
 using SalesDashboard.Application.DTOs;
 using SalesDashboard.Domain.Entities;
 using SalesDashboard.Infrastructure.Data;
@@ -11,10 +12,15 @@ namespace SalesDashboard.Api.Controllers;
 public class CustomersController : ControllerBase
 {
     private readonly SalesDashboardDbContext _context;
+    private readonly IDistributedCache _cache;
+    private readonly ILogger<CustomersController> _logger;
+    private const string DashboardCacheKey = "dashboard-summary";
 
-    public CustomersController(SalesDashboardDbContext context)
+    public CustomersController(SalesDashboardDbContext context, IDistributedCache cache, ILogger<CustomersController> logger)
     {
         _context = context;
+        _cache = cache;
+        _logger = logger;
     }
 
     [HttpGet]
@@ -72,6 +78,15 @@ public class CustomersController : ControllerBase
         _context.Customers.Add(customer);
         await _context.SaveChangesAsync();
 
+        try
+        {
+            await _cache.RemoveAsync(DashboardCacheKey);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogWarning(ex, "Redis is unavailable. Dashboard cache was not cleared.");
+        }
+
         var response = new CustomerDto
         {
             Id = customer.Id,
@@ -101,6 +116,15 @@ public class CustomersController : ControllerBase
 
         await _context.SaveChangesAsync();
 
+        try
+        {
+            await _cache.RemoveAsync(DashboardCacheKey);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogWarning(ex, "Redis is unavailable. Dashboard cache was not cleared.");
+        }
+
         return NoContent();
     }
 
@@ -116,6 +140,15 @@ public class CustomersController : ControllerBase
 
         _context.Customers.Remove(customer);
         await _context.SaveChangesAsync();
+
+        try
+        {
+            await _cache.RemoveAsync(DashboardCacheKey);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogWarning(ex, "Redis is unavailable. Dashboard cache was not cleared.");
+        }
 
         return NoContent();
     }

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
 using SalesDashboard.Application.DTOs;
 using SalesDashboard.Domain.Entities;
 using SalesDashboard.Infrastructure.Data;
@@ -11,10 +12,13 @@ namespace SalesDashboard.Api.Controllers;
 public class ProductsController : ControllerBase
 {
     private readonly SalesDashboardDbContext _context;
+    private readonly IDistributedCache _cache;
+    private const string DashboardCacheKey = "dashboard-summary";
 
-    public ProductsController(SalesDashboardDbContext context)
+    public ProductsController(SalesDashboardDbContext context, IDistributedCache cache)
     {
         _context = context;
+        _cache = cache;
     }
 
     [HttpGet]
@@ -71,6 +75,7 @@ public class ProductsController : ControllerBase
 
         _context.Products.Add(product);
         await _context.SaveChangesAsync();
+        await _cache.RemoveAsync(DashboardCacheKey);
 
         var response = new ProductDto
         {
@@ -100,6 +105,7 @@ public class ProductsController : ControllerBase
         product.StockQuantity = request.StockQuantity;
 
         await _context.SaveChangesAsync();
+        await _cache.RemoveAsync(DashboardCacheKey);
 
         return NoContent();
     }
@@ -116,6 +122,7 @@ public class ProductsController : ControllerBase
 
         _context.Products.Remove(product);
         await _context.SaveChangesAsync();
+        await _cache.RemoveAsync(DashboardCacheKey);
 
         return NoContent();
     }

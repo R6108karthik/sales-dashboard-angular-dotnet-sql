@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using SalesDashboard.Application.Messaging;
 using SalesDashboard.Infrastructure.Data;
+using SalesDashboard.Infrastructure.Messaging;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +24,9 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddControllers();
+
+builder.Services.AddScoped<IMessagePublisher, RabbitMqPublisher>();
+builder.Services.AddHostedService<OrderCreatedConsumer>();
 
 builder.Services.AddStackExchangeRedisCache(options =>
 {
