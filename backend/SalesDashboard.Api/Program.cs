@@ -2,7 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using SalesDashboard.Application.Messaging;
 using SalesDashboard.Infrastructure.Data;
 using SalesDashboard.Infrastructure.Messaging;
-
+using SalesDashboard.Api.Hubs;
+using SalesDashboard.Api.Realtime;
+using SalesDashboard.Application.Realtime;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +21,8 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("http://localhost:4200")
             .AllowAnyHeader()
-            .AllowAnyMethod();
+            .AllowAnyMethod()
+            .AllowCredentials();
     });
 });
 
@@ -33,6 +36,8 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.Configuration = builder.Configuration["Redis:ConnectionString"];
     options.InstanceName = "SalesDashboard:";
 });
+builder.Services.AddSignalR();
+builder.Services.AddSingleton<IRealtimeNotifier, SignalRRealtimeNotifier>();
 
 var app = builder.Build();
 
@@ -51,5 +56,5 @@ app.MapGet("/", () => Results.Redirect("/swagger"));
 app.UseHttpsRedirection();
 app.UseCors("AllowAngularApp");
 app.MapControllers();
-
+app.MapHub<SalesDashboardHub>("/hubs/sales-dashboard");
 app.Run();

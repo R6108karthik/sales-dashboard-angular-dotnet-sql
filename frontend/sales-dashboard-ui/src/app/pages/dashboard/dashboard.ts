@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { DashboardSummary } from '../../models/dashboard-summary';
 import { DashboardService } from '../../services/dashboard';
+import { RealtimeService } from '../../services/realtime.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -15,10 +16,14 @@ export class DashboardComponent implements OnInit {
   loading = false;
   errorMessage = '';
 
-  constructor(private dashboardService: DashboardService) {}
+  constructor(private dashboardService: DashboardService, private realtimeService: RealtimeService ) {}
 
   ngOnInit(): void {
     this.loadSummary();
+    this.realtimeService.startConnection();
+    this.realtimeService.onOrderCreated(() => {
+      this.loadSummary();
+    });
   }
 
   loadSummary(): void {

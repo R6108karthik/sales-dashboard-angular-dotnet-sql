@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using SalesDashboard.Application.Messaging;
+using SalesDashboard.Application.Realtime;
 
 namespace SalesDashboard.Infrastructure.Messaging;
 
@@ -13,11 +14,13 @@ public class OrderCreatedConsumer : BackgroundService
 {
     private readonly IConfiguration _configuration;
     private readonly ILogger<OrderCreatedConsumer> _logger;
+    private readonly IRealtimeNotifier _realtimeNotifier;
 
-    public OrderCreatedConsumer(IConfiguration configuration, ILogger<OrderCreatedConsumer> logger)
+    public OrderCreatedConsumer(IConfiguration configuration, ILogger<OrderCreatedConsumer> logger, IRealtimeNotifier realtimeNotifier)
     {
         _configuration = configuration;
         _logger = logger;
+        _realtimeNotifier = realtimeNotifier;
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -58,6 +61,15 @@ public class OrderCreatedConsumer : BackgroundService
                     message?.OrderId,
                     message?.CustomerId,
                     message?.TotalAmount);
+
+                if (message is not null)
+                {
+                    await _realtimeNotifier.OrderCreatedAsync(
+                        message.OrderId,
+                        message.CustomerId,
+                        message.TotalAmount,
+                        stoppingToken);
+                }
 
                 await channel.BasicAckAsync(
                     deliveryTag: eventArgs.DeliveryTag,
